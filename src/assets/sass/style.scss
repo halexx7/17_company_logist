@@ -3,24 +3,27 @@
 
 /* Default styles */
 html {
-    font-size: 15px;
+    font-size: 14px;
 }
 
 body {
     margin: 0;
 
-    background-color: $gray;
-
-    font-family: 'Montserrat', sans-serif;
-    color: $black;
+    font-family: 'Roboto', sans-serif;
+    color: $white;
     font-size: 1rem;
-    line-height: 1.5;
+    line-height: 1.15rem;
 }
 
 *,
 *:before,
 *:after {
     box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 
