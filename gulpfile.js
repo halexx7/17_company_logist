@@ -11,7 +11,7 @@ const rename = require("gulp-rename");
 const rigger = require("gulp-rigger");
 const sass = require("gulp-sass");
 const removeComments = require("gulp-strip-css-comments");
-const uglify = require("gulp-uglify");
+const uglify = require("gulp-uglify-es").default;
 const panini = require("panini");
 const del = require("del");
 const browsersync = require("browser-sync").create();
@@ -133,6 +133,7 @@ const watch = gulp.parallel(build, watchFiles, browserSync);
 /* Export Tasks */
 exports.html = html;
 exports.css = css;
+exports.js = js;
 exports.images = images;
 exports.clean = clean;
 exports.build = build;
