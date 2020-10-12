@@ -1,0 +1,48 @@
+.all-services__title {
+    margin-top: 11.85rem;
+    margin-bottom: 4.28rem;
+}
+
+.all-services__card {
+    padding: 2.5rem 3rem;
+
+    background-color: $gray;
+    border: 1px solid $gray_bg;
+
+}
+
+.card__logo {
+    margin-top: 1.42rem;
+}
+
+.card__text {
+    margin-top: 3.07rem;
+
+    font-weight: 700;
+    font-size: 1.28rem;
+    line-height: 1.57rem;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $white;
+}
+
+.all-services__box {
+    margin-bottom: 8.57rem;
+}
+
+.all-services__card--gold {
+    position: relative;
+    z-index: -2;
+
+    background-color: $gold;
+}
+
+.card__circle {
+    position: absolute;
+    top: 35px;
+    right: 106px;
+    z-index: -1;
+
+}
+

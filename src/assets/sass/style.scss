@@ -9,10 +9,17 @@ html {
 body {
     margin: 0;
 
+    background-color: $gray_bg;
+
     font-family: 'Roboto', sans-serif;
     color: $white;
     font-size: 1rem;
     line-height: 1.15rem;
+}
+
+a {
+    color: $white;
+    text-decoration: none;
 }
 
 *,
@@ -26,13 +33,27 @@ body {
     padding: 0;
 }
 
+buttom {
+    border-bottom: none;
+    border-bottom-color: none;
+    background: none;
+}
+
 
 /* Bootstrap */
 @import "../../../node_modules/bootstrap/scss/functions";
 @import "../../../node_modules/bootstrap/scss/variables";
 @import "../../../node_modules/bootstrap/scss/mixins";
 @import "../../../node_modules/bootstrap/scss/grid";
+@import "../../../node_modules/bootstrap/scss/utilities";
 
 
 /* Blocks */
 @import "blocks/header";
+@import "blocks/intro";
+@import "blocks/services";
+@import "blocks/btn";
+@import "blocks/all-services";
+@import "blocks/about";
+@import "blocks/map";
+@import "blocks/footer";

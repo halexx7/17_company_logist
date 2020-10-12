@@ -1,3 +1,97 @@
-.header {
-    background-color: red;
+.topband {
+    height: 45px;
+    padding: 1.14rem 0;
+
+    background-color: $gold;
 }
+
+.topband__item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.topband__lang {
+    display: flex;
+}
+
+.topband__lang__item {
+    margin-right: .71rem;
+
+    font-weight: 400;
+    font-size: .85rem;
+    line-height: 1rem;
+    color: $white;
+    opacity: .5;
+}
+
+.topband__lang__item--activ {
+    opacity: 1;
+}
+
+.topband__link {
+    font-weight: 400;
+    font-size: .85rem;
+    line-height: 1rem;
+
+    color: $white;
+}
+
+.header {
+    height: 100px;
+}
+
+.header__item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__left-box {
+    margin-top: 1.92rem;
+
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    padding-right: 2.14rem;
+
+    display: flex;
+    align-content: center;
+
+    border-right: 1px solid #F2F2F2;
+}
+
+.header__text {
+    margin-left: 2.14rem;
+
+    display: flex;
+    align-items: center;
+
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.14rem;
+    letter-spacing: .05em;
+    color: $white;
+
+    &::before {
+        content: url(../img/top_lock.svg);
+        margin-right: .71rem;
+    }
+}
+
+.header__right-box {
+    margin-top: 3rem;
+}
+
+.nav__link {
+    margin-left: 2.14rem;
+
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.14rem;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+
+    color: $white;
+}
+

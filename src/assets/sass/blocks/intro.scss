@@ -1,0 +1,46 @@
+.intro {
+    padding-top: 10rem;
+    min-height: 620px;
+
+    background: url(../img/intro_img.png) center center no-repeat;
+}
+
+.intro__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro__text {
+    max-width: 920px;
+    padding: 3.21rem 5.14rem;
+    margin-bottom: 10rem;
+
+    border: 1px solid $gold;
+}
+
+.intro__title {
+    margin-bottom: 3.21rem;
+
+    font-weight: 700;
+    font-size: 4.55rem;
+    line-height: 5.36rem;
+    letter-spacing: .05em;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+}
+
+.intro__descripton {
+    max-width: 777px;
+
+    font-weight: 400;
+    font-size: 1.28rem;
+    line-height: 2rem;
+    text-align: center;
+    color: $white;
+}
+
+.intro__icon {
+    margin: 0 auto;
+}

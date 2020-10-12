@@ -1,0 +1,79 @@
+.services {
+    padding: 11.14rem 0 8.57rem 0;
+    min-height: 561px;
+
+    background-image: linear-gradient(to right, $gray 40%, $gray_bg 40% 60%, $gray 60%);
+}
+
+.services__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    margin-bottom: 2.14rem;
+    width: 390px;
+
+    position: relative;
+
+    font-weight: 700;
+    font-size: 2.85rem;
+    line-height: 3.5rem;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    color: $white;
+
+    &::before {
+        content: "";
+        margin-bottom: 2.86rem;
+        height: .42rem;
+        width: 6.42rem;
+
+        position: absolute;
+        top: -40px;
+        left: 0;
+        z-index: 1000;
+
+        background-color: $gold;
+    }
+}
+
+.info-services__text {
+    padding-bottom: 3.57rem;
+    width: 320px;
+}
+
+
+.info-services__btn {
+    padding: 1.28rem 3.42rem;
+}
+
+.services__slider {
+    height: 266px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slick-arrow {
+    position: absolute;
+    right: 0;
+    z-index: 2; // стрелки сверху картинок
+    font-size: 0; // убираем надпись на дефолтной стрелке
+    width: 164px; // ширина стрелки
+    height: 23px; // высота стрелки
+
+    border: none;
+    background-color: $gray;
+    background-repeat: no-repeat;
+}
+
+.slick-prev {
+    top: 0;
+    background-image: url(../img/services__next.svg);
+    background-color: none;
+}
+
+.slick-next {
+    bottom: 0;
+    background-image: url(../img/services__back.svg);
+}
