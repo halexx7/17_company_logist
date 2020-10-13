@@ -10,4 +10,18 @@
     letter-spacing: .1em;
     text-transform: uppercase;
     color: $white;
+
+    &:hover {
+        color: $gold;
+        background-color: $white;
+
+        border: 1px solid $gold;
+
+        transition: .2s;
+    }
+
+    @media (max-width: $breakpoint_sm) {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
 }

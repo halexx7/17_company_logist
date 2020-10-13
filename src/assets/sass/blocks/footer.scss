@@ -12,17 +12,31 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: $breakpoint_lg) {
+        padding: 2.9rem 0;
+    }
 }
 
 .footer__logo {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: $breakpoint_lg) {
+        margin-bottom: 3rem;
+    }
 }
 
 .footer__addres {
     display: flex;
     flex-direction: column;
+
+    @media (max-width: $breakpoint_lg) {
+        margin-bottom: 1rem;
+
+        align-items: center;
+    }
 }
 
 .item-footer__addres {
@@ -45,6 +59,12 @@
 .footer__contact {
     display: flex;
     flex-direction: column;
+
+    @media (max-width: $breakpoint_lg) {
+        margin-bottom: 1rem;
+
+        align-items: center;
+    }
 }
 
 .item-footer__tel {
@@ -64,4 +84,9 @@
     line-height: 1.14rem;
     text-decoration-line: underline;
     color: $gray_bg;
+
+    @media (max-width: $breakpoint_lg) {
+        display: flex;
+        justify-content: center;
+    }
 }

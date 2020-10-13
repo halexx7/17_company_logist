@@ -1,6 +1,10 @@
 .all-services__title {
     margin-top: 11.85rem;
     margin-bottom: 4.28rem;
+
+    @media (max-width: $breakpoint_sm) {
+        margin-top: 6.85rem;
+    }
 }
 
 .all-services__card {
@@ -8,6 +12,10 @@
 
     background-color: $gray;
     border: 1px solid $gray_bg;
+
+    @media (max-width: $breakpoint_sm) {
+        max-width: 320px;
+    }
 
 }
 
@@ -29,6 +37,17 @@
 
 .all-services__box {
     margin-bottom: 8.57rem;
+
+    @media(max-width: $breakpoint_sm) {
+        margin-bottom: 4rem;
+    }
+}
+
+.all-services__row {
+
+    @media(max-width: $breakpoint_sm) {
+        justify-content: center;
+    }
 }
 
 .all-services__card--gold {
@@ -44,5 +63,52 @@
     right: 106px;
     z-index: -1;
 
+    @media (max-width: $breakpoint_xl) {
+        right: 85px;
+    }
+
+    @media (max-width: $breakpoint_lg) {
+        right: 323px;
+    }
+
+    @media (max-width: $breakpoint_sm) {
+        right: 122px;
+    }
 }
+
+.about__ord-1 {
+
+    @media (max-width: $breakpoint_sm) {
+        order: 1;
+    }
+}
+
+.about__ord-2 {
+
+    @media (max-width: $breakpoint_sm) {
+        order: 3;
+    }
+}
+
+.about__ord-3 {
+
+    @media (max-width: $breakpoint_sm) {
+        order: 2;
+    }
+}
+
+.about__ord-4 {
+
+    @media (max-width: $breakpoint_sm) {
+        order: 4;
+    }
+}
+
+.about__ord-5 {
+
+    @media (max-width: $breakpoint_sm) {
+        order: 5;
+    }
+}
+
 

@@ -3,11 +3,19 @@
     min-height: 561px;
 
     background-image: linear-gradient(to right, $gray 40%, $gray_bg 40% 60%, $gray 60%);
+
+    @media (max-width: $breakpoint_sm) {
+        padding: 7rem 0 5rem 0;
+    }
 }
 
 .services__info {
     display: flex;
     flex-direction: column;
+
+    @media (max-width: $breakpoint_xl) {
+        margin-bottom: 8.57rem;
+    }
 }
 
 .title {
@@ -36,6 +44,13 @@
 
         background-color: $gold;
     }
+
+    @media (max-width: $breakpoint_sm) {
+        width: 200px;
+
+        font-size: 1.9rem;
+        line-height: 2.5rem;
+    }
 }
 
 .info-services__text {
@@ -46,6 +61,10 @@
 
 .info-services__btn {
     padding: 1.28rem 3.42rem;
+
+    @media (max-width: $breakpoint_sm) {
+        padding: 1rem 2.5rem;
+    }
 }
 
 .services__slider {

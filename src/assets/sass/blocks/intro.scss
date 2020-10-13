@@ -1,8 +1,17 @@
 .intro {
     padding-top: 10rem;
-    min-height: 620px;
+    max-height: 620px;
 
     background: url(../img/intro_img.png) center center no-repeat;
+
+    @media (max-width: $breakpoint_xl) {
+        padding-top: 4rem;
+    }
+
+    @media (max-width: $breakpoint_sm) {
+        min-height: 100%;
+        padding-bottom: 2rem;
+    }
 }
 
 .intro__item {
@@ -17,6 +26,10 @@
     margin-bottom: 10rem;
 
     border: 1px solid $gold;
+
+    @media (max-width: $breakpoint_sm) {
+        padding: 1rem;
+    }
 }
 
 .intro__title {
@@ -29,6 +42,18 @@
     text-align: center;
     text-transform: uppercase;
     color: $white;
+
+    @media (max-width: $breakpoint_xl) {
+        font-size: 3.55rem;
+        line-height: 4.36rem;
+    }
+
+    @media (max-width: $breakpoint_sm) {
+        margin-bottom: 1.5rem;
+
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
 }
 
 .intro__descripton {
@@ -39,8 +64,14 @@
     line-height: 2rem;
     text-align: center;
     color: $white;
+
+    @media (max-width: $breakpoint_sm) {
+        font-size: 1rem;
+        line-height: 2rem;
+    }
 }
 
 .intro__icon {
     margin: 0 auto;
+    margin-bottom: 3.57rem;
 }

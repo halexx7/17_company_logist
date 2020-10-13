@@ -1,5 +1,5 @@
 .about__item {
-    padding: 80px 0;
+    padding: 5.7rem 0;
 
     background-image: linear-gradient(to right, $gray_bg 37%, $gray 37% 63%, $gray_bg 63%);
 }
@@ -16,10 +16,37 @@
     font-size: 1.14rem;
     line-height: 1.64rem;
     color: $white;
+
+    @media (max-width: $breakpoint_sm) {
+        padding: 0 2rem;
+        text-align: center;
+    }
 }
 
 .about__right-box {
     padding-left: 5.6rem;
+
+    @media (max-width: $breakpoint_lg) {
+        margin-top: 5.7rem;
+    }
+
+    @media (max-width: $breakpoint_sm) {
+        margin-top: 3rem;
+        padding: 0;
+
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.about__row {
+
+    @media (max-width: $breakpoint_sm) {
+        margin: 0;
+
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .about__card {
@@ -63,6 +90,17 @@
     line-height: 1rem;
     text-align: center;
     color: $black;
+
+    @media (max-width: $breakpoint_sm) {
+        margin-bottom: 1.7rem;
+    }
+}
+
+.about__card__d-none {
+
+    @media (max-width: $breakpoint_sm) {
+        display: none;
+    }
 }
 
 .about-card__img {
